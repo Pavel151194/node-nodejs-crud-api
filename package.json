@@ -6,7 +6,7 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "start:dev": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "start:dev": "nodemon --exec ts-node src/index.ts",
     "start:prod": "tsc && node dist/index.js",
     "start:multi": "ts-node src/cluster.ts",
     "test": "jest --preset ts-jest"

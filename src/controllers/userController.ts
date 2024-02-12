@@ -33,7 +33,7 @@ const addUser = async (req: IncomingMessage, res: ServerResponse) => {
   const user = { ...body, id: getId() };
 
   if (!validateUser(user)) {
-    respond.badRequest(res, { message: 'body does not contain required fields' });
+    respond.badRequest(res, { message: 'body does not contain required fields or has extra fields' });
     return;
   }
 

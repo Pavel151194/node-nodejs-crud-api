@@ -6,4 +6,4 @@ export const validateUser = (user: Partial<User>): boolean =>
   user.hobbies &&
   typeof user.username === 'string' &&
   typeof user.age === 'number' &&
-  Array.isArray(user.hobbies);
+  Array.isArray(user.hobbies) && Object.keys(user).length === 4;
