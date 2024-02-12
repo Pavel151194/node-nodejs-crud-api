@@ -1,0 +1,42 @@
+{
+  "name": "node-nodejs-crud-api",
+  "version": "1.0.0",
+  "description": "This repository is the part of nodejs-assignments https://github.com/AlreadyBored/nodejs-assignments",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start:dev": "nodemon --exec ts-node src/index.ts",
+    "start:prod": "tsc && node dist/index.js",
+    "start:multi": "ts-node src/cluster.ts",
+    "test": "jest --preset ts-jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pavel151194/node-nodejs-crud-api"
+  },
+  "keywords": [
+    "nodejs",
+    "assignments",
+    "Pavel151194"
+  ],
+  "author": "Pavel Zhbankov",
+  "license": "ISC",
+  "homepage": "https://github.com/Pavel151194/node-nodejs-crud-api#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.16",
+    "@types/uuid": "^9.0.8",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
